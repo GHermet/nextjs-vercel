@@ -8,4 +8,8 @@ module.exports = {
     // a non-locale prefixed path e.g. `/hello`
     defaultLocale: 'en',
   },
+  async redirects() {
+    const { redirects } = require('./vercel.config.json');
+    return redirects;
+  },
 };
