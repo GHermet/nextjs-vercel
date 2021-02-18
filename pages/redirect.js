@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
 export default function Redirect() {
@@ -11,11 +12,9 @@ export default function Redirect() {
 
       <main className={styles.main}>
         <h1>Redirected Page</h1>
-        <div className={styles.grid}>
-          <a href='/' className={styles.card}>
-            Back to homepage
-          </a>
-        </div>
+        <Link href='/'>
+          <a className={styles.card}>Home</a>
+        </Link>
       </main>
 
       <footer className={styles.footer}>
