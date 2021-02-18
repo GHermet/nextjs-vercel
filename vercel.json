@@ -4,6 +4,11 @@
       "source": "/",
       "destination": "/redirect",
       "permanent": false
+    },
+    {
+      "source": "/bla/bla",
+      "destination": "/redirect",
+      "permanent": false
     }
   ]
 }
